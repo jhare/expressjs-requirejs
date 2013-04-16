@@ -1,15 +1,24 @@
 expressjs-requirejs
 ===================
 
+# Note: Work in progress, motherfuckers.#
+
 Example of using ExpressJS in conjunction with RequireJS to share your client-side code with the server side.
+
+
 
 ### Steps ###
 
+#### Install Express ####
 
-#### Creating the skeleton application ####
+```
+npm install -g express
+```
+
+#### Creating the Skeleton Application ####
 Create a basic Express application with the steps they describe in http://expressjs.com/guide.html#executable .
 
-I executed the statements 
+For this tutorial I ran 
 ```
 express --sessions -css less expressjs-requirejs &&
 cd expressjs-requirejs &&
@@ -60,9 +69,26 @@ expressjs-requirejs/
   |-- package.json
 ```
 
+#### Adding jQuery et. al. ####
+For this example I'll be linking in jQuery and Bootstrap, since it's such a 
+common combination.
+
 #### Setting up RequireJS ####
 
-#### Defining a Module ####
+In `./public/javascripts` create a file `main.js`. This is the entry point for
+require.js on the **client-side** (we haven't changed anything server-side).
+
+Its contents
+
+#### A Few Good Modules ####
+
+Create a file in `./public/javascripts/
+```
+define(['jquery', 'bootstrap'], function($, Bootstrap) {
+
+    
+
+});
 
 #### Normal Case: Using Client-side Modules Client-side ####
 
