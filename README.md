@@ -38,7 +38,8 @@ expressjs-requirejs/
 
 If you don't have a copy handy, go to http://requirejs.org
 
-Also, check out its starting guide if you're not familiar with it yet, found at http://requirejs.org/docs/start.html .
+Also, check out its starting guide if you're not familiar with it yet, found
+at http://requirejs.org/docs/start.html .
 
 Place `require.js` into the `./public/javascripts` directory. 
 ```
@@ -59,21 +60,29 @@ expressjs-requirejs/
   |-- package.json
 ```
 
-
 #### Setting up RequireJS ####
 
 #### Defining a Module ####
 
 #### Normal Case: Using Client-side Modules Client-side ####
 
-#### New Case: Using Client-side Modules Server-siode ####
+#### New Case: Using Client-side Modules Server-side ####
 
 Here's the fun part, where start getting all share-ey.
 
-*Up to this point we haven't don't anything out of the ordinary as far as using require.js goes.*
+**Up to this point we haven't don't anything out of the ordinary as far as
+using require.js goes.**
 
 We're going to do two things
-* Convert `app.js` to use require.js for looking up modules before using the NodeJS `require()`
+* Convert `app.js` to use require.js for looking up modules before using the
+NodeJS `require()`
 * Include a client-side module on the server side and do something with it.
 
+#### Current Issues & Different Strategies ####
+
+Depending on who you talk to, some people like to concatentate whatever version
+of jQuery they're using with require.js to make sure it's always available. I
+can see the benefit of this, but in this example I stick to keeping it
+separate. It's up to your personal preference in the end and what you want to
+support in your build process.
 
