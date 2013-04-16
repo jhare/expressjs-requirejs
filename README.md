@@ -89,6 +89,7 @@ define(['jquery', 'bootstrap'], function($, Bootstrap) {
     
 
 });
+```
 
 #### Normal Case: Using Client-side Modules Client-side ####
 
