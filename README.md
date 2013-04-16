@@ -48,6 +48,7 @@ expressjs-requirejs/
   |-- public/
     |-- images/
     |-- javascripts/
+      |-- require.js
     |-- stylesheets/
       |-- style.less (or style.styl for stylus)
   |-- routes/
