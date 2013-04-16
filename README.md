@@ -62,11 +62,18 @@ expressjs-requirejs/
 
 #### Setting up RequireJS ####
 
-#### Definiing a Module ####
+#### Defining a Module ####
 
 #### Normal Case: Using Client-side Modules Client-side ####
 
 #### New Case: Using Client-side Modules Server-siode ####
 
+Here's the fun part, where start getting all share-ey.
+
+*Up to this point we haven't don't anything out of the ordinary as far as using require.js goes.*
+
+We're going to do two things
+* Convert `app.js` to use require.js for looking up modules before using the NodeJS `require()`
+* Include a client-side module on the server side and do something with it.
 
 
