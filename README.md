@@ -81,15 +81,24 @@ require.js on the **client-side** (we haven't changed anything server-side).
 Its contents
 
 #### A Few Good Modules ####
+Create a directory `./public/javascripts/mymodules`.
 
-Create a file in `./public/javascripts/
+Create a file `./public/javascripts/mymodules/MathStuff.js`.
 ```
-define(['jquery', 'bootstrap'], function($, Bootstrap) {
+define(function() {
 
-    
 
 });
 ```
+
+Create a file './public/javascripts/mymodules/SomeValidation.js`.
+```
+define(['jquery'], function($) {
+
+});
+```
+
+
 
 #### Normal Case: Using Client-side Modules Client-side ####
 
