@@ -5,10 +5,6 @@ expressjs-requirejs
 
 Example of using ExpressJS in conjunction with RequireJS to share your client-side code with the server side.
 
-
-
-### Steps ###
-
 #### Install Express ####
 
 ```
@@ -87,9 +83,8 @@ define(['jquery'], function() {
 ```
 
 #### A Few Good Modules ####
-Create a directory `./public/javascripts/mymodules`.
-
-Create a file `./public/javascripts/mymodules/MathStuff.js`.
+Create a directory `./public/javascripts/mymodules` and create these two files
+in it.
 
 **./public/javascripts/mymodules/MathStuff.js**
 ```
@@ -99,8 +94,6 @@ define(function() {
 });
 ```
 
-Create a file './public/javascripts/mymodules/SomeValidation.js`.
-
 **./public/javascripts/SomeValidation.js**
 ```
 define(['jquery'], function($) {
@@ -108,7 +101,27 @@ define(['jquery'], function($) {
 });
 ```
 
-
+Now your directory structure will look like
+```
+expressjs-requirejs/
+  |-- node_modules/
+    |-- (lots of stuff here, not important to list)
+  |-- public/
+    |-- images/
+    |-- javascripts/
+      |-- mymodules
+        |-- MathStuff.js
+        |-- SomeValidation.js
+      |-- require.js
+    |-- stylesheets/
+      |-- style.less (or style.styl for stylus)
+  |-- routes/
+    |-- index.js
+  |-- views/
+    |-- index.ejs
+  |-- app.js
+  |-- package.json
+```
 
 #### Normal Case: Using Client-side Modules Client-side ####
 
