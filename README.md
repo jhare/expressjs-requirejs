@@ -78,12 +78,20 @@ common combination.
 In `./public/javascripts` create a file `main.js`. This is the entry point for
 require.js on the **client-side** (we haven't changed anything server-side).
 
-Its contents
+**./public/javascripts/main.js**
+```
+define(['jquery'], function() {
+  // This logs to the browser's console, not Node's.
+  console.log("Hello! I'm the client-side Javscript entry point");
+});
+```
 
 #### A Few Good Modules ####
 Create a directory `./public/javascripts/mymodules`.
 
 Create a file `./public/javascripts/mymodules/MathStuff.js`.
+
+**./public/javascripts/mymodules/MathStuff.js**
 ```
 define(function() {
 
@@ -92,6 +100,8 @@ define(function() {
 ```
 
 Create a file './public/javascripts/mymodules/SomeValidation.js`.
+
+**./public/javascripts/SomeValidation.js**
 ```
 define(['jquery'], function($) {
 
