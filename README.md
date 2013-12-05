@@ -16,7 +16,7 @@ Create a basic Express application with the steps they describe in http://expres
 
 For this tutorial I ran 
 ```
-express --sessions -css less expressjs-requirejs &&
+express --sessions --css less expressjs-requirejs &&
 cd expressjs-requirejs &&
 npm install
 ```
